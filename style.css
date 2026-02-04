@@ -1,15 +1,78 @@
+/* ---------- Fond romantique et centré ---------- */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ffe4e1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Container central */
+#container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 60px 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    max-width: 500px;
+}
+
+/* Titre */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff4d6d;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.6);
+}
+
+/* Boutons */
+button {
+    font-size: 1.5em;
+    padding: 15px 40px;
+    margin: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Oui - romantique */
+#yes {
+    background: #ff4d6d;
+    color: white;
+}
+
+#yes:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Non - gris mais qui fuit */
+#no {
+    background: #999;
+    color: white;
+}
+
+/* Message romantique */
+#message {
+    font-size: 1.8em;
+    color: #ff4d6d;
+    margin-top: 30px;
+    line-height: 1.4;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Message caché par défaut */
 .hidden {
     display: none;
 }
 
-#message {
-    font-size: 2em;
-    color: #ff4d6d;
-    margin-top: 30px;
-    animation: fadeIn 1s ease;
-}
-
+/* Animation apparition */
 @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
+    from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
