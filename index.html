@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>💌 Une surprise pour notre 1 an…</title>
     <link rel="stylesheet" href="style.css">
     <script>
         function redirect(event) {
             event.preventDefault();
             if (document.forms[0].password.value !== "08-02-2025") {
-                alert("wrong password");
+                alert("Le mot de passe n'est pas bon 😝 \nSi tu veux un indice, envoie moi un message 😉");
             }
             else {
                 window.location = "valentine.html";
@@ -18,10 +18,13 @@
     </script>
 </head>
 <body>
+<div id="login-container">
+    <form method="post">
+        <h1> Pour accéder à ta surprise, entre le code 😉💖</h1>
+        <input type="password" name="password">
+        <button onclick="redirect(event)">Ouvrir 🎁</button>
+    </form>
+</div>
 
-<form method="post">
-    <input type="password" name="password">
-    <button onclick="redirect(event)">clique</button>
-</form>
 </body>
 </html>
