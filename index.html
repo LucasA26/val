@@ -7,7 +7,12 @@
     <script>
         function redirect(event) {
             event.preventDefault();
-            window.location = "library.html";
+            if (document.forms[0].password.value !== "08-02-2025") {
+                alert("wrong password");
+            }
+            else {
+                window.location = "valentine.html";
+            }
 
         }
     </script>
